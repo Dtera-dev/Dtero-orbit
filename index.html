@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dtera's Digital Orbit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body class="min-h-screen text-gray-200">
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-gray-900/80 backdrop-blur-sm z-10">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1><a href="#home" class="text-2xl sm:text-3xl font-orbitron">Dtero's Digital Orbit</a></h1>
+      <div>
+        <button id="menu-toggle" class="text-neon-green focus:outline-none md:hidden">
+          <img src="./assets/icons/menu.png" alt="menu" style="max-width: 1.8rem;">
+        </button>
+      </div>
+      <ul id="nav-menu" class="space-y-4 md:space-y-0 md:space-x-6">
+        <li><a href="#home" class="hover:text-neon-green transition">Home</a></li>
+        <li><a href="#about" class="hover:text-neon-green transition">About</a></li>
+        <li><a href="#projects" class="hover:text-neon-green transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-neon-green transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+    <div class="text-center relative">
+      <img src="./assets/images/akara1.png" alt="Dtera Avatar" class="avatar mx-auto mb-6" loading="lazy">
+      <h1 class="text-4xl sm:text-5xl font-orbitron mb-2 text-neon-green">Ali Alinezhad — Dtero</h1>
+      <h2 class="text-xl sm:text-2xl font-orbitron mb-4 text-neon-pink">Digital Wizard & Web Designer</h2>
+      <p class="text-base sm:text-lg mb-6 font-jetbrains">"I code with imagination, I design with instinct."</p>
+      <div class="space-x-4">
+        <a href="#projects" class="btn bg-neon-green text-black hover:bg-neon-pink hover:text-white">View Portfolio</a>
+        <a href="./assets/resumedtero1.pdf" class="btn bg-transparent border-2 border-neon-green text-neon-green hover:bg-neon-green hover:text-black">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-900/60">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl sm:text-4xl font-orbitron text-center mb-10 text-neon-green">About Me</h2>
+      <p class="text-base sm:text-lg text-center mb-8 font-jetbrains">"I’m a coder and creative designer who builds worlds with code. Passionate about game dev, AI, web design, and crafting magical UI."</p>
+      <div class="max-w-2xl mx-auto">
+        <h3 class="text-xl sm:text-2xl font-orbitron mb-4 text-neon-pink">Skills</h3>
+        <div class="space-y-4 font-jetbrains">
+          <div><span>HTML/CSS</span><div class="skill-bar"><div class="skill-bar-fill" data-width="95%"></div></div></div>
+          <div><span>Tailwind CSS</span><div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div></div>
+          <div><span>JavaScript</span><div class="skill-bar"><div class="skill-bar-fill" data-width="80%"></div></div></div>
+          <div><span>React</span><div class="skill-bar"><div class="skill-bar-fill" data-width="50%"></div></div></div>
+          <div><span>Vue</span><div class="skill-bar"><div class="skill-bar-fill" data-width="45%"></div></div></div>
+          <div><span>PHP</span><div class="skill-bar"><div class="skill-bar-fill" data-width="40%"></div></div></div>
+          <div><span>SQL</span><div class="skill-bar"><div class="skill-bar-fill" data-width="70%"></div></div></div>
+        </div>
+        <div class="mt-8 card p-6">
+          <h3 class="text-lg sm:text-xl font-orbitron text-neon-green">Character Stats</h3>
+          <p>HP: <span class="text-neon-green">100/100</span></p>
+          <p>MP: <span class="text-neon-pink">80/100</span></p>
+          <p>Skills: Code Conjuring, UI Enchantment, Algorithmic Alchemy</p>
+          <button id="secret-btn" class="btn mt-4 bg-neon-pink text-white hover:bg-neon-green hover:text-black">Reveal Secret</button>
+          <p id="secret-text" class="secret-reveal mt-2">"Dtero’s true power lies in turning coffee into code!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl sm:text-4xl font-orbitron text-center mb-10 text-neon-green">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card relative p-6">
+          <img src="./assets/images/web1ph (1).png" alt="CommodityExchange" class="w-full h-48 rounded object-cover mb-4" loading="lazy">
+          <h3 class="text-lg sm:text-xl font-orbitron text-neon-pink">CommodityExchange</h3>
+          <p class="font-jetbrains">Designed for a client with a focus on simple, efficient UI.</p>
+          <a href="http://commodityexchange.zya.me" target="_blank" class="text-neon-green hover:underline font-jetbrains">Live Demo</a>
+        </div>
+        <div class="card relative p-6">
+          <img src="./assets/images/web1photo.png" alt="AlgoritmicOrbit" class="w-full h-48 rounded object-cover mb-4" loading="lazy">
+          <h3 class="text-lg sm:text-xl font-orbitron text-neon-pink">AlgoritmicOrbit</h3>
+          <p class="font-jetbrains">My experimental playground for algorithmic design.</p>
+          <a href="https://algoritmicorbit.ir" target="_blank" class="text-neon-green hover:underline font-jetbrains">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900/60">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl sm:text-4xl font-orbitron mb-10 text-neon-green">Contact Me</h2>
+      <p class="font-jetbrains"><i class="fas fa-envelope text-neon-green contact-icon"></i> Email: <a href="mailto:greentero.official@gmail.com" class="text-neon-green hover:underline">greentero.official@gmail.com</a></p>
+      <p class="font-jetbrains"><i class="fab fa-github text-neon-green contact-icon"></i> GitHub: <a href="https://github.com/Dtera-dev" target="_blank" class="text-neon-green hover:underline">github.com/Dtera_dev</a></p>
+      <p class="font-jetbrains"><i class="fas fa-file-pdf text-neon-green contact-icon"></i> Resume: <a href="./assets/resume.pdf" target="_blank" class="text-neon-green hover:underline">Download PDF</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-gray-900/80 font-jetbrains" style="background: linear-gradient(45deg, #7f5af0, #2cb67d);">
+    <p>© 2025 Dtera's Digital Orbit. All rights reserved.</p>
+  </footer>
+
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
