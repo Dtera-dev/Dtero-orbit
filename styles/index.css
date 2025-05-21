@@ -28,7 +28,9 @@ body {
 .border-neon-green {
   border-color: #00ff88;
 }
-
+.box-sh {
+    box-shadow: 0 0 15px #00ff88, 0 0 30px #ff00ff;
+}
 .avatar {
   width: 40vw;
   height: 40vw;
