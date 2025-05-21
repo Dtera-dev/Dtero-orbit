@@ -1,8 +1,8 @@
 // ScrollReveal Animations
 ScrollReveal().reveal('#home', { delay: 200, duration: 1000, origin: 'top', distance: '50px' });
 ScrollReveal().reveal('#about', { delay: 200, duration: 1000, origin: 'bottom', distance: '50px' });
-ScrollReveal().reveal('#projects', { delay: 200, duration: 1000, origin: 'left', distance: '50px' });
-ScrollReveal().reveal('#contact', { delay: 200, duration: 1000, origin: 'right', distance: '50px' });
+ScrollReveal().reveal('#projects', { delay: 200, duration: 1000, origin: 'top', distance: '50px' });
+ScrollReveal().reveal('#contact', { delay: 200, duration: 1000, origin: 'top', distance: '50px' });
 
 // Secret Reveal Button
 document.getElementById('secret-btn').addEventListener('click', () => {
